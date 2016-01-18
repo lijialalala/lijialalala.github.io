@@ -57,28 +57,31 @@
 
 
 
-<meta name="description" content="categories: 搭建环境 tags: hexo/node.js
-第一次搭建hexo并部署到github，参考了http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html这上面步骤很全
+<meta name="description" content="categories: 搭建环境           tags: hexo/node.js
+第一次搭建hexo并部署到github，参考了“史上最详细“截图”搭建Hexo博客并部署到Github”这上面步骤很全
 但是，还是出现了一些问题，只靠这个没法解决：
+###1. 当你hexo generate时一直报错cannot find module###
 
-当你hexo generate时一直报错cannot find module1ERROR Er">
+1ERROR Error: Cannot f">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo_usage(个人搭建hexo并部署到github的说明)">
 <meta property="og:url" content="http://yoursite.com/2016/01/18/hexoxo-usage/index.html">
 <meta property="og:site_name" content="Psychola">
-<meta property="og:description" content="categories: 搭建环境 tags: hexo/node.js
-第一次搭建hexo并部署到github，参考了http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html这上面步骤很全
+<meta property="og:description" content="categories: 搭建环境           tags: hexo/node.js
+第一次搭建hexo并部署到github，参考了“史上最详细“截图”搭建Hexo博客并部署到Github”这上面步骤很全
 但是，还是出现了一些问题，只靠这个没法解决：
+###1. 当你hexo generate时一直报错cannot find module###
 
-当你hexo generate时一直报错cannot find module1ERROR Er">
-<meta property="og:updated_time" content="2016-01-18T11:40:21.118Z">
+1ERROR Error: Cannot f">
+<meta property="og:updated_time" content="2016-01-18T12:12:36.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo_usage(个人搭建hexo并部署到github的说明)">
-<meta name="twitter:description" content="categories: 搭建环境 tags: hexo/node.js
-第一次搭建hexo并部署到github，参考了http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html这上面步骤很全
+<meta name="twitter:description" content="categories: 搭建环境           tags: hexo/node.js
+第一次搭建hexo并部署到github，参考了“史上最详细“截图”搭建Hexo博客并部署到Github”这上面步骤很全
 但是，还是出现了一些问题，只靠这个没法解决：
+###1. 当你hexo generate时一直报错cannot find module###
 
-当你hexo generate时一直报错cannot find module1ERROR Er">
+1ERROR Error: Cannot f">
 
 
 
@@ -228,7 +231,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-01-18T19:40:21+08:00" content="2016-01-18">
+            <time itemprop="dateCreated" datetime="2016-01-18T20:12:36+08:00" content="2016-01-18">
               2016-01-18
             </time>
           </span>
@@ -254,15 +257,16 @@
       
 
       
-        <p>categories: 搭建环境 tags: hexo/node.js</p>
-<p>第一次搭建hexo并部署到github，参考了<a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" title="史上最详细“截图”搭建Hexo博客并部署到Github" target="_blank" rel="external">http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html</a>这上面步骤很全</p>
+        <p>categories: 搭建环境           tags: hexo/node.js</p>
+<p>第一次搭建hexo并部署到github，参考了<a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="external">“史上最详细“截图”搭建Hexo博客并部署到Github”</a>这上面步骤很全</p>
 <p><strong>但是，还是出现了一些问题，只靠这个没法解决：</strong></p>
-<ol>
-<li><strong>当你hexo generate时一直报错cannot find module</strong><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Error: Cannot find module &#39;bluebird&#39;&#10;    at Function.Module._resolveFilename (module.js:336:15)&#10;    at Function.Module._load (module.js:286:25)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;    at Object.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo\lib\hexo\index.js         :3:15)&#10;    at Module._compile (module.js:434:26)&#10;    at Object.Module._extensions..js (module.js:452:10)&#10;    at Module.load (module.js:355:32)&#10;    at Function.Module._load (module.js:310:12)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;&#9;...</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p><strong>解决办法：</strong><br>    安装相应组件<br>    $ npm install –save bluebird</p>
-<p><strong><em>p.s.</em></strong>后来安装后 继续输入hexo g, hexo d（这些为generate和deploy的缩写，可以使用代替）仍然报错说Cannot find module hexo-generator-category及以下列表中的组件</p>
+<p>###1. 当你hexo generate时一直报错cannot find module###</p>
+<blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Error: Cannot find module &#39;bluebird&#39;&#10;    at Function.Module._resolveFilename (module.js:336:15)&#10;    at Function.Module._load (module.js:286:25)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;    at Object.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo\lib\hexo\index.js         :3:15)&#10;    at Module._compile (module.js:434:26)&#10;    at Object.Module._extensions..js (module.js:452:10)&#10;    at Module.load (module.js:355:32)&#10;    at Function.Module._load (module.js:310:12)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;&#9;...</span><br></pre></td></tr></table></figure>
+<p><strong>解决办法：</strong><br>安装相应组件</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#9;$ npm install --save bluebird&#10;&#62;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>p.s.</strong>后来安装后 继续输入hexo g, hexo d（这些为generate和deploy的缩写，可以使用代替）<strong>仍然报错说Cannot find module hexo-generator-category及以下列表中的组件</strong></p>
 <pre><code>- hexo-pagination
 - ejs
 - marked
@@ -275,16 +279,20 @@
 - hexo-util
 - compression
 </code></pre><p>此时只要继续像刚才一样输入下载相应组件的代码即可</p>
-<p><strong>2.  $ hexo deploy时一直报错ERROR Deployer not found: github</strong></p>
+<p>###2.  $ hexo deploy时一直报错ERROR Deployer not found: github###</p>
+<blockquote>
 <p><strong>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘: No error</strong></p>
-<pre><code>- 先把_config.yml文件中的type值从github改为git（因为hexo3.0+有一些改变）
-- repository值改为 ssh://git@github.com/lijialalala/lijialalala.github.io.git
-- 再输入命令行 $ npm install hexo-deployer-git --save
-和$ npm install hexo-server --save
-</code></pre><p><strong>3.后来我又出现了 Host key verification failed.<br>fatal: Could not read from remote repository.错误</strong></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights&#10;and the repository exists.&#10;FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&#10;Error: Host key verification failed.&#10;fatal: Could not read from remote repository.&#10;&#10;Please make sure you have the correct access rights&#10;and the repository exists.&#10;&#10;    at ChildProcess.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&#10;    at emitTwo (events.js:87:13)&#10;    at ChildProcess.emit (events.js:172:7)&#10;    at maybeClose (internal/child_process.js:817:16)&#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)</span><br></pre></td></tr></table></figure>
-<p>此时进行 验证的时候 回复yes就可以了</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>先把_config.yml文件中的type值从github改为git（因为hexo3.0+有一些改变）</li>
+<li>repository值改为 ssh://git@github.com/lijialalala/lijialalala.github.io.git</li>
+<li>再输入命令行 $ npm install hexo-deployer-git –save<br>和$ npm install hexo-server –save</li>
+</ul>
+</blockquote>
+<p>###3.后来我又出现了 Host key verification failed.</p>
+<p>###fatal: Could not read from remote repository.错误###</p>
+<p>&gt;<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;Please make sure you have the correct access rights&#10;and the repository exists.&#10;FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&#10;Error: Host key verification failed.&#10;fatal: Could not read from remote repository.&#10;&#10;&#62;Please make sure you have the correct access rights&#10;and the repository exists.&#10;&#10;&#62;    at ChildProcess.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&#10;    at emitTwo (events.js:87:13)&#10;    at ChildProcess.emit (events.js:172:7)&#10;    at maybeClose (internal/child_process.js:817:16)&#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)</span><br></pre></td></tr></table></figure></p>
+<p>此时进行 <strong>验证的时候 回复yes</strong>就可以了</p>
+<p>&gt;<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;&#62;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure></p>
 <p>最后就成功了，这仅是个人经验，如有错误请指出我会更改的。</p>
 
       
