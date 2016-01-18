@@ -189,15 +189,6 @@
 
     
     
-      
-      
-        
-        
-        
-      
-
-      
-    
 
     
       
@@ -222,7 +213,7 @@
               
                 
                 <a class="post-title-link" href="/2016/01/18/hexoxo-usage/" itemprop="url">
-                  hexo_usage(个人搭建hexo并部署到github的说明)
+                  个人搭建hexo并部署到github的说明
                 </a>
               
             
@@ -235,7 +226,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-01-18T20:12:36+08:00" content="2016-01-18">
+            <time itemprop="dateCreated" datetime="2016-01-18T20:23:27+08:00" content="2016-01-18">
               2016-01-18
             </time>
           </span>
@@ -263,10 +254,11 @@
       
         
           
-            <p>categories: 搭建环境           tags: hexo/node.js</p>
+            <p>categories: 搭建环境           </p>
+<p>tags: hexo/node.js</p>
 <p>第一次搭建hexo并部署到github，参考了<a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="external">“史上最详细“截图”搭建Hexo博客并部署到Github”</a>这上面步骤很全</p>
 <p><strong>但是，还是出现了一些问题，只靠这个没法解决：</strong></p>
-<p>###1. 当你hexo generate时一直报错cannot find module###</p>
+<p>##1. 当你hexo generate时一直报错cannot find module##</p>
 <blockquote>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Error: Cannot find module &#39;bluebird&#39;&#10;    at Function.Module._resolveFilename (module.js:336:15)&#10;    at Function.Module._load (module.js:286:25)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;    at Object.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo\lib\hexo\index.js         :3:15)&#10;    at Module._compile (module.js:434:26)&#10;    at Object.Module._extensions..js (module.js:452:10)&#10;    at Module.load (module.js:355:32)&#10;    at Function.Module._load (module.js:310:12)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;&#9;...</span><br></pre></td></tr></table></figure>
 <p><strong>解决办法：</strong><br>安装相应组件</p>
@@ -285,8 +277,7 @@
 - hexo-util
 - compression
 </code></pre><p>此时只要继续像刚才一样输入下载相应组件的代码即可</p>
-<p>###2.  $ hexo deploy时一直报错ERROR Deployer not found: github###</p>
-<blockquote>
+<h2 id="2-_$_hexo_deploy时一直报错ERROR_Deployer_not_found:_github">2.  $ hexo deploy时一直报错ERROR Deployer not found: github</h2><blockquote>
 <p><strong>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘: No error</strong></p>
 <ul>
 <li>先把_config.yml文件中的type值从github改为git（因为hexo3.0+有一些改变）</li>
@@ -294,8 +285,7 @@
 <li>再输入命令行 $ npm install hexo-deployer-git –save<br>和$ npm install hexo-server –save</li>
 </ul>
 </blockquote>
-<p>###3.后来我又出现了 Host key verification failed.</p>
-<p>###fatal: Could not read from remote repository.错误###</p>
+<p>##3.后来我又出现了 Host key verification failed.  fatal: Could not read from remote repository.错误##</p>
 <p>&gt;<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;Please make sure you have the correct access rights&#10;and the repository exists.&#10;FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&#10;Error: Host key verification failed.&#10;fatal: Could not read from remote repository.&#10;&#10;&#62;Please make sure you have the correct access rights&#10;and the repository exists.&#10;&#10;&#62;    at ChildProcess.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&#10;    at emitTwo (events.js:87:13)&#10;    at ChildProcess.emit (events.js:172:7)&#10;    at maybeClose (internal/child_process.js:817:16)&#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)</span><br></pre></td></tr></table></figure></p>
 <p>此时进行 <strong>验证的时候 回复yes</strong>就可以了</p>
 <p>&gt;<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;&#62;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure></p>
