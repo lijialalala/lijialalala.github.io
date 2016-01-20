@@ -73,7 +73,7 @@ tags: hexo/node.js
 但是，还是出现了一些问题，只靠这个没法解决：
 1. 当你hexo generate时一直报错cannot find module
 1ERROR Error: Cannot find mo">
-<meta property="og:updated_time" content="2016-01-20T06:09:17.068Z">
+<meta property="og:updated_time" content="2016-01-20T06:22:37.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人搭建hexo并部署到github的说明">
 <meta name="twitter:description" content="categories: 搭建环境           
@@ -231,7 +231,7 @@ tags: hexo/node.js
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T14:09:17+08:00" content="2016-01-20">
+            <time itemprop="dateCreated" datetime="2016-01-20T14:22:37+08:00" content="2016-01-20">
               2016-01-20
             </time>
           </span>
@@ -297,7 +297,7 @@ tags: hexo/node.js
 <h2 id="3-_后来我又出现了_Host_key_verification_failed-_fatal:_Could_not_read_from_remote_repository-错误">3. 后来我又出现了 Host key verification failed.  fatal: Could not read from remote repository.错误</h2><blockquote>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;Please make sure you have the correct access rights&#10;and the repository exists.&#10;FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&#10;Error: Host key verification failed.&#10;fatal: Could not read from remote repository.&#10;&#10;Please make sure you have the correct access rights&#10;and the repository exists.&#10;&#10;    at ChildProcess.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&#10;    at emitTwo (events.js:87:13)&#10;    at ChildProcess.emit (events.js:172:7)&#10;    at maybeClose (internal/child_process.js:817:16)&#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)</span><br></pre></td></tr></table></figure>
 </blockquote>
-<p>此时进行 <strong>验证的时候 回复yes</strong>就可以了</p>
+<p>此时输入最初搭建时的<strong>密码</strong> 然后 <strong>验证的时候 回复yes</strong>就可以了</p>
 <blockquote>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;&#62;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure>
 </blockquote>
