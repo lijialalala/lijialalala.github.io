@@ -221,7 +221,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/01/18/hexoxo-usage/" itemprop="url">
+                <a class="post-title-link" href="/2016/01/20/hexoxo-usage/" itemprop="url">
                   个人搭建hexo并部署到github的说明
                 </a>
               
@@ -235,8 +235,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-18T20:33:09+08:00" content="2016-01-18">
-              2016-01-18
+            <time itemprop="dateCreated" datetime="2016-01-20T14:06:26+08:00" content="2016-01-20">
+              2016-01-20
             </time>
           </span>
 
@@ -246,8 +246,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/18/hexoxo-usage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/18/hexoxo-usage/" itemprop="commentsCount"></span>
+                <a href="/2016/01/20/hexoxo-usage/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/hexoxo-usage/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -307,6 +307,11 @@
 <blockquote>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;&#62;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>##4.借助“多说”来建立留言区</p>
+<ul>
+<li>首先进入多说首页注册 然后点击“我要安装”（此时会进入 创建站点 的页面，填完后要记住自己的多说域名要填的那部分，即二级域名后面会用到。）</li>
+<li>点击确认后，进入页面获取代码，再根据<a href="http://www.lichanglin.cn/%E5%9C%A8hexo%E4%B8%AD%E5%8A%A0%E5%85%A5%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA/" target="_blank" rel="external">“在hexo中加入多说评论”</a>的步骤即可完成哦~</li>
+</ul>
 <p>最后就成功了，这仅是个人经验，如有错误请指出我会更改的。</p>
 
           
@@ -338,14 +343,9 @@
           
 
 
-          <% if (config.disqus_shortname && page.comments){ %>
-<!--likaci tab.js init begin-->
-<script type="text/javascript" src="/js/tab.js"></script>
-<script type="text/javascript">
-    window.onload=function(){
-         var tabtype={trigger:'mouseover',tabCurrentClass:'newclass',auto:false,timer:4000,delay:300 };
-         tabInit(tabtype,['Disqus_bt','disqus_thread'],['duoshuo_bt','ds-thread'])
-    }
+          
+
+
 </script>
 <!--likaic tab.js init end-->
 <!--likaci css style begin-->
@@ -357,32 +357,24 @@
 #Disqus_bt.newclass{background-color:#E6EFC2}
 </style>
 <!--likaci css style end-->
-<section id="comment">
-  <h1 class="title"><%= __('comment') %></h1>
-  <!--likaci add button begin-->
-  <div id="duoshuo_bt">多说</div>
-  <div id="Disqus_bt" >Disqus</div>
-  <!--liakc add button end-->
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-<!--likaci add duoshuo begin-->
-    <div class="ds-thread"></div>
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"yourshotname"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = 'http://static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-<!--likaci add duoshuo end-->
-</section>
-<% } %>
 
+
+<!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="<%= post.path %>" data-title="<%= post.title %>" data-url="<%= post.permalink %>"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"psychola"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
         </div>
         
           
@@ -538,7 +530,7 @@
   
 
   <script type="text/javascript">
-    var duoshuoQuery = {short_name:"hexo_usageshort_name"};
+    var duoshuoQuery = {short_name:"psychola"};
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
@@ -551,6 +543,9 @@
   </script>
 
   
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
     
   
 
