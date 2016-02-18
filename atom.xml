@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Psychola]]></title>
+  <title>Psychola</title>
   
   <link href="/atom.xml" rel="self"/>
+  
   <link href="http://yoursite.com/"/>
   <updated>2016-01-20T13:34:57.612Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name><![CDATA[psychola]]></name>
+    <name>psychola</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[个人搭建hexo并部署到github期间遇到的问题]]></title>
+    <title>个人搭建hexo并部署到github期间遇到的问题</title>
     <link href="http://yoursite.com/2016/01/20/hexoxo-usage/"/>
     <id>http://yoursite.com/2016/01/20/hexoxo-usage/</id>
     <published>2016-01-20T13:34:57.612Z</published>
     <updated>2016-01-20T13:34:57.612Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/hexo2.png"><br>第一次搭建hexo并部署到github，参考了文章<strong><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="external">“史上最详细“截图”搭建Hexo博客并部署到Github”</a></strong>这上面步骤很全</p>
-<p><strong>但是，还是出现了一些问题，只靠这个没法解决：</strong><br><a id="more"></a></p>
-<h2 id="1-_当你hexo_generate时一直报错cannot_find_module">1. 当你hexo generate时一直报错cannot find module</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Error: Cannot find module &#39;bluebird&#39;&#10;    at Function.Module._resolveFilename (module.js:336:15)&#10;    at Function.Module._load (module.js:286:25)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;    at Object.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo\lib\hexo\index.js         :3:15)&#10;    at Module._compile (module.js:434:26)&#10;    at Object.Module._extensions..js (module.js:452:10)&#10;    at Module.load (module.js:355:32)&#10;    at Function.Module._load (module.js:310:12)&#10;    at Module.require (module.js:365:17)&#10;    at require (module.js:384:17)&#10;&#9;...</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>解决办法：</strong><br>安装相应组件</p>
-</blockquote>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save bluebird</span><br></pre></td></tr></table></figure>
-<p><strong>p.s.</strong>后来安装后 继续输入hexo g, hexo d（这些为generate和deploy的缩写，可以使用代替）<strong>仍然报错说Cannot find module hexo-generator-category及以下列表中的组件</strong></p>
-<pre><code>- hexo-pagination
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/hexo2.png&quot;&gt;&lt;br&gt;第一次搭建hexo并部署到github，参考了文章&lt;strong&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“史上最详细“截图”搭建Hexo博客并部署到Github”&lt;/a&gt;&lt;/strong&gt;这上面步骤很全&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但是，还是出现了一些问题，只靠这个没法解决：&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-_当你hexo_generate时一直报错cannot_find_module&quot;&gt;1. 当你hexo generate时一直报错cannot find module&lt;/h2&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ERROR Error: Cannot find module &amp;#39;bluebird&amp;#39;&amp;#10;    at Function.Module._resolveFilename (module.js:336:15)&amp;#10;    at Function.Module._load (module.js:286:25)&amp;#10;    at Module.require (module.js:365:17)&amp;#10;    at require (module.js:384:17)&amp;#10;    at Object.&amp;#60;anonymous&amp;#62; (D:\Hexo\node_modules\hexo\lib\hexo\index.js         :3:15)&amp;#10;    at Module._compile (module.js:434:26)&amp;#10;    at Object.Module._extensions..js (module.js:452:10)&amp;#10;    at Module.load (module.js:355:32)&amp;#10;    at Function.Module._load (module.js:310:12)&amp;#10;    at Module.require (module.js:365:17)&amp;#10;    at require (module.js:384:17)&amp;#10;&amp;#9;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;解决办法：&lt;/strong&gt;&lt;br&gt;安装相应组件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install --save bluebird&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;p.s.&lt;/strong&gt;后来安装后 继续输入hexo g, hexo d（这些为generate和deploy的缩写，可以使用代替）&lt;strong&gt;仍然报错说Cannot find module hexo-generator-category及以下列表中的组件&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- hexo-pagination
 - ejs
 - marked
 - stylus
@@ -39,47 +41,52 @@
 - chalk
 - hexo-util
 - compression
-</code></pre><p>此时只要继续像刚才一样输入下载相应组件的代码即可</p>
-<h2 id="2-_$_hexo_deploy时一直报错ERROR_Deployer_not_found:_github">2.  $ hexo deploy时一直报错ERROR Deployer not found: github</h2><blockquote>
-<p><strong>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘: No error</strong></p>
-<ul>
-<li>先把_config.yml文件中的type值从github改为git（因为hexo3.0+有一些改变）</li>
-<li>repository值改为 ssh://git@github.com/lijialalala/lijialalala.github.io.git</li>
-<li>再输入命令行 $ npm install hexo-deployer-git –save<br>和$ npm install hexo-server –save</li>
-</ul>
-</blockquote>
-<h2 id="3-_后来我又出现了_Host_key_verification_failed-_fatal:_Could_not_read_from_remote_repository-错误">3. 后来我又出现了 Host key verification failed.  fatal: Could not read from remote repository.错误</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Please make sure you have the correct access rights&#10;and the repository exists.&#10;FATAL Something&#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&#10;Error: Host key verification failed.&#10;fatal: Could not read from remote repository.&#10;&#10;Please make sure you have the correct access rights&#10;and the repository exists.&#10;&#10;    at ChildProcess.&#60;anonymous&#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&#10;    at emitTwo (events.js:87:13)&#10;    at ChildProcess.emit (events.js:172:7)&#10;    at maybeClose (internal/child_process.js:817:16)&#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)</span><br></pre></td></tr></table></figure>
-<p>此时输入最初搭建时的<strong>密码</strong> 然后 <strong>验证的时候 回复yes</strong>就可以了</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Administrator@USER-20140708CY MINGW64 /d/Hexo&#10;$ ssh git@github.com&#10;&#10;The authenticity of host &#39;github.com (192.30.252.129)&#39; can&#39;t be established.&#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&#10;Are you sure you want to continue connecting (yes/no)?** yes**&#10;Warning: Permanently added &#39;github.com,192.30.252.129&#39; (RSA) to the list of known hosts.&#10;PTY allocation request failed on channel 0&#10;Hi lijialalala! You&#39;ve successfully authenticated, but GitHub does not provide shell access.&#10;Connection to github.com closed.</span><br></pre></td></tr></table></figure>
-<h2 id="4-借助“多说”来建立留言区">4.借助“多说”来建立留言区</h2><ul>
-<li>首先进入多说首页注册 然后点击“我要安装”（此时会进入 创建站点 的页面，填完后要记住自己的多说域名要填的那部分，即二级域名后面会用到。）</li>
-<li>点击确认后，进入页面获取代码，再根据<strong><a href="http://www.lichanglin.cn/%E5%9C%A8hexo%E4%B8%AD%E5%8A%A0%E5%85%A5%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA/" target="_blank" rel="external">“在hexo中加入多说评论”</a></strong>的步骤即可完成哦~</li>
-</ul>
-<h2 id="5-解决Permission_denied_(publickey)-_fatal:_Could_not_read_from_remote_repository-”和“Please_make_sure_you_have_the_correct_access_rights_and_the_repository_exists-”的错误">5.解决Permission denied (publickey). fatal: Could not read from remote repository.”和“Please make sure you have the correct access rights and the repository exists.”的错误</h2><ul>
-<li>重新下过旧版本的msysgit即可<br>详情参见 <strong><a href="http://www.cognize.me/2015/08/22/msysgiterror" target="_blank" rel="external">“解决hexo一个奇怪的错误”</a></strong></li>
-</ul>
-<h2 id="6-“Swiftype”/“微搜索”建立站内搜索功能">6.“Swiftype”/“微搜索”建立站内搜索功能</h2><ul>
-<li>帐号注册的步骤及非next主题下的搜索部署完全可以参考文章<strong><a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html" target="_blank" rel="external">“利用swiftype为hexo添加站内搜索v2.0”</a></strong></li>
-<li>因为我用的是next主题 所以只需将swiftype的key写入next主题下的_config.yml文件即可,无需把那段生成的script脚本添加到header文件中</li>
-</ul>
-<figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">swiftype_key</span>: <span class="string">yourswiftypekey</span></span><br></pre></td></tr></table></figure>
-<p>其中key即为注册时js中的st(‘install’,’yourswiftypekey’)<br>不清楚的可以参考文章<strong><a href="http://lizhuolun.com/posts/%E4%B8%BAhexo-next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0tinysou-Swiftype-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#tsq=%E4%B8%BA&amp;tsp=1" target="_blank" rel="external">“为hexo-next主题添加tinysou/Swiftype 站内搜索”</a></strong></p>
-<h2 id="7-标签和分类怎么用">7.标签和分类怎么用</h2><p>参照官网配置好后，只要在每篇文章里的分割线—之前以列表的格式写就好了，如图：<br><img src="/images/hexo1.png" style="width:300px"></p>
-<p>that’s ALL，这仅是个人经验及多多百度问津的结果，如有错误请指出我会更改的。</p>
-<p>以下为<strong>参考文章，非常感谢</strong>：</p>
-<ol>
-<li><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="external">“史上最详细“截图”搭建Hexo博客并部署到Github”</a></li>
-<li><a href="http://www.lichanglin.cn/%E5%9C%A8hexo%E4%B8%AD%E5%8A%A0%E5%85%A5%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA/" target="_blank" rel="external">“在hexo中加入多说评论”</a></li>
-<li><a href="http://www.cognize.me/2015/08/22/msysgiterror" target="_blank" rel="external">“解决hexo一个奇怪的错误”</a></li>
-<li><a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html" target="_blank" rel="external">“利用swiftype为hexo添加站内搜索v2.0”</a></li>
-<li><a href="http://lizhuolun.com/posts/%E4%B8%BAhexo-next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0tinysou-Swiftype-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#tsq=%E4%B8%BA&amp;tsp=1" target="_blank" rel="external">“为hexo-next主题添加tinysou/Swiftype 站内搜索”</a></li>
-</ol>
-]]></content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此时只要继续像刚才一样输入下载相应组件的代码即可&lt;/p&gt;
+&lt;h2 id=&quot;2-_$_hexo_deploy时一直报错ERROR_Deployer_not_found:_github&quot;&gt;2.  $ hexo deploy时一直报错ERROR Deployer not found: github&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;error: failed to execute prompt script (exit code 1)&lt;br&gt;fatal: could not read Username for ‘&lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com&lt;/a&gt;‘: No error&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先把_config.yml文件中的type值从github改为git（因为hexo3.0+有一些改变）&lt;/li&gt;
+&lt;li&gt;repository值改为 ssh://git@github.com/lijialalala/lijialalala.github.io.git&lt;/li&gt;
+&lt;li&gt;再输入命令行 $ npm install hexo-deployer-git –save&lt;br&gt;和$ npm install hexo-server –save&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;3-_后来我又出现了_Host_key_verification_failed-_fatal:_Could_not_read_from_remote_repository-错误&quot;&gt;3. 后来我又出现了 Host key verification failed.  fatal: Could not read from remote repository.错误&lt;/h2&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Please make sure you have the correct access rights&amp;#10;and the repository exists.&amp;#10;FATAL Something&amp;#39;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html&amp;#10;Error: Host key verification failed.&amp;#10;fatal: Could not read from remote repository.&amp;#10;&amp;#10;Please make sure you have the correct access rights&amp;#10;and the repository exists.&amp;#10;&amp;#10;    at ChildProcess.&amp;#60;anonymous&amp;#62; (D:\Hexo\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)&amp;#10;    at emitTwo (events.js:87:13)&amp;#10;    at ChildProcess.emit (events.js:172:7)&amp;#10;    at maybeClose (internal/child_process.js:817:16)&amp;#10;    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;此时输入最初搭建时的&lt;strong&gt;密码&lt;/strong&gt; 然后 &lt;strong&gt;验证的时候 回复yes&lt;/strong&gt;就可以了&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Administrator@USER-20140708CY MINGW64 /d/Hexo&amp;#10;$ ssh git@github.com&amp;#10;&amp;#10;The authenticity of host &amp;#39;github.com (192.30.252.129)&amp;#39; can&amp;#39;t be established.&amp;#10;RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.&amp;#10;Are you sure you want to continue connecting (yes/no)?** yes**&amp;#10;Warning: Permanently added &amp;#39;github.com,192.30.252.129&amp;#39; (RSA) to the list of known hosts.&amp;#10;PTY allocation request failed on channel 0&amp;#10;Hi lijialalala! You&amp;#39;ve successfully authenticated, but GitHub does not provide shell access.&amp;#10;Connection to github.com closed.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;4-借助“多说”来建立留言区&quot;&gt;4.借助“多说”来建立留言区&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;首先进入多说首页注册 然后点击“我要安装”（此时会进入 创建站点 的页面，填完后要记住自己的多说域名要填的那部分，即二级域名后面会用到。）&lt;/li&gt;
+&lt;li&gt;点击确认后，进入页面获取代码，再根据&lt;strong&gt;&lt;a href=&quot;http://www.lichanglin.cn/%E5%9C%A8hexo%E4%B8%AD%E5%8A%A0%E5%85%A5%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“在hexo中加入多说评论”&lt;/a&gt;&lt;/strong&gt;的步骤即可完成哦~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;5-解决Permission_denied_(publickey)-_fatal:_Could_not_read_from_remote_repository-”和“Please_make_sure_you_have_the_correct_access_rights_and_the_repository_exists-”的错误&quot;&gt;5.解决Permission denied (publickey). fatal: Could not read from remote repository.”和“Please make sure you have the correct access rights and the repository exists.”的错误&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;重新下过旧版本的msysgit即可&lt;br&gt;详情参见 &lt;strong&gt;&lt;a href=&quot;http://www.cognize.me/2015/08/22/msysgiterror&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“解决hexo一个奇怪的错误”&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;6-“Swiftype”/“微搜索”建立站内搜索功能&quot;&gt;6.“Swiftype”/“微搜索”建立站内搜索功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;帐号注册的步骤及非next主题下的搜索部署完全可以参考文章&lt;strong&gt;&lt;a href=&quot;http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“利用swiftype为hexo添加站内搜索v2.0”&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;因为我用的是next主题 所以只需将swiftype的key写入next主题下的_config.yml文件即可,无需把那段生成的script脚本添加到header文件中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight http&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;swiftype_key&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;yourswiftypekey&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;其中key即为注册时js中的st(‘install’,’yourswiftypekey’)&lt;br&gt;不清楚的可以参考文章&lt;strong&gt;&lt;a href=&quot;http://lizhuolun.com/posts/%E4%B8%BAhexo-next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0tinysou-Swiftype-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#tsq=%E4%B8%BA&amp;amp;tsp=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“为hexo-next主题添加tinysou/Swiftype 站内搜索”&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;7-标签和分类怎么用&quot;&gt;7.标签和分类怎么用&lt;/h2&gt;&lt;p&gt;参照官网配置好后，只要在每篇文章里的分割线—之前以列表的格式写就好了，如图：&lt;br&gt;&lt;img src=&quot;/images/hexo1.png&quot; style=&quot;width:300px&quot;&gt;&lt;/p&gt;
+&lt;p&gt;that’s ALL，这仅是个人经验及多多百度问津的结果，如有错误请指出我会更改的。&lt;/p&gt;
+&lt;p&gt;以下为&lt;strong&gt;参考文章，非常感谢&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“史上最详细“截图”搭建Hexo博客并部署到Github”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lichanglin.cn/%E5%9C%A8hexo%E4%B8%AD%E5%8A%A0%E5%85%A5%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“在hexo中加入多说评论”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cognize.me/2015/08/22/msysgiterror&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“解决hexo一个奇怪的错误”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“利用swiftype为hexo添加站内搜索v2.0”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lizhuolun.com/posts/%E4%B8%BAhexo-next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0tinysou-Swiftype-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#tsq=%E4%B8%BA&amp;amp;tsp=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“为hexo-next主题添加tinysou/Swiftype 站内搜索”&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
     <summary type="html">
-    <![CDATA[<p><img src="/images/hexo2.png"><br>第一次搭建hexo并部署到github，参考了文章<strong><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html">“史上最详细“截图”搭建Hexo博客并部署到Github”</a></strong>这上面步骤很全</p>
-<p><strong>但是，还是出现了一些问题，只靠这个没法解决：</strong><br>]]>
+    
+      &lt;p&gt;&lt;img src=&quot;/images/hexo2.png&quot;&gt;&lt;br&gt;第一次搭建hexo并部署到github，参考了文章&lt;strong&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html&quot;&gt;“史上最详细“截图”搭建Hexo博客并部署到Github”&lt;/a&gt;&lt;/strong&gt;这上面步骤很全&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但是，还是出现了一些问题，只靠这个没法解决：&lt;/strong&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="搭建环境" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/"/>
+    
     
       <category term="Swiftype" scheme="http://yoursite.com/tags/Swiftype/"/>
     
@@ -88,8 +95,6 @@
       <category term="多说" scheme="http://yoursite.com/tags/%E5%A4%9A%E8%AF%B4/"/>
     
       <category term="微搜索" scheme="http://yoursite.com/tags/%E5%BE%AE%E6%90%9C%E7%B4%A2/"/>
-    
-      <category term="搭建环境" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83/"/>
     
   </entry>
   
