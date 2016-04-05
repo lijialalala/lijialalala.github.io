@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-05T13:06:48.487Z</updated>
+  <updated>2016-04-05T13:10:27.727Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>个人搭建hexo并部署到github期间遇到的问题</title>
     <link href="http://yoursite.com/2016/04/05/hexoxo-usage/"/>
     <id>http://yoursite.com/2016/04/05/hexoxo-usage/</id>
-    <published>2016-04-05T13:06:48.487Z</published>
-    <updated>2016-04-05T13:06:48.487Z</updated>
+    <published>2016-04-05T13:10:27.727Z</published>
+    <updated>2016-04-05T13:10:27.727Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/hexo2.png&quot;&gt;&lt;br&gt;第一次搭建hexo并部署到github，参考了文章&lt;strong&gt;&lt;a href=&quot;http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“史上最详细“截图”搭建Hexo博客并部署到Github”&lt;/a&gt;&lt;/strong&gt;这上面步骤很全&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;但是，还是出现了一些问题，只靠这个没法解决：&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -73,6 +73,7 @@
 &lt;li&gt;&lt;a href=&quot;http://fionat.github.io/blog/2013/10/23/sitemap/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“｜Hexo优化｜如何向google提交sitemap（详细）”&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://selfboot.cn/2014/12/21/add_blog_to_google/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“博客推广——提交搜索引擎”&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;然后成功后：&lt;br&gt;&lt;img src=&quot;/images/hexo3.png&quot; style=&quot;width:600px&quot;&gt;&lt;/p&gt;
 &lt;p&gt;that’s ALL，这仅是个人经验及多多百度问津的结果，如有错误请指出我会更改的。&lt;/p&gt;
 &lt;p&gt;以下为&lt;strong&gt;参考文章，非常感谢&lt;/strong&gt;：&lt;/p&gt;
 &lt;ol&gt;
@@ -81,6 +82,8 @@
 &lt;li&gt;&lt;a href=&quot;http://www.cognize.me/2015/08/22/msysgiterror&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“解决hexo一个奇怪的错误”&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“利用swiftype为hexo添加站内搜索v2.0”&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://lizhuolun.com/posts/%E4%B8%BAhexo-next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0tinysou-Swiftype-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/#tsq=%E4%B8%BA&amp;amp;tsp=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“为hexo-next主题添加tinysou/Swiftype 站内搜索”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fionat.github.io/blog/2013/10/23/sitemap/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“｜Hexo优化｜如何向google提交sitemap（详细）”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://selfboot.cn/2014/12/21/add_blog_to_google/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“博客推广——提交搜索引擎”&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
