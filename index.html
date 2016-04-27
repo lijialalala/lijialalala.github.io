@@ -256,7 +256,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/28/dimpurr-exam/" itemprop="url">
-                  dimpurr_exam
+                  解读钉子的“一个 Div 可以做到的 …”
                 </a>
               
             
@@ -322,43 +322,14 @@
 
       
         
-          
-            <p>啦啦啦 psychola搬运工来啦，<strong>大家相信下图中大圆圆只用一个div就可以做到吗</strong>？</p>
-<p><strong>钉子 [“原文例子地址”](<a href="http://blog.dimpurr.com/one-div-css3-cd/）" target="_blank" rel="external">http://blog.dimpurr.com/one-div-css3-cd/）</a> </strong><br><img src="/images/dz1.png" style="width:600px"></p>
-<p>答案肯定如你们所料是：可以的。</p>
-<p>我和大家一样，一开始都觉得很不可思议，但如果你们参悟了css3的灵活性，说不定以后也能发现一些新奇的东东。然后这个例子是我从一个现在读高中的菊苣钉子（dimpurr）博客看到的，原文例子在14年1月写的把 很早看到的啦，个人很喜欢也很佩服他的奇思妙想和一些ui 设计。图为他个人简介页面的部分截图，而他的<strong>blog <a href="http://blog.dimpurr.com/" target="_blank" rel="external">“钉子の次元”</a></strong>大家可以去逛逛，github上有他设计的wordpress博客主题下载哦~~（我没在打广告= =<br><img src="/images/dz6.png" style="width:600px"> </p>
-<p>废话不说 开始解读一下怎么实现的把<br>一般人一个div可以很简单地写成下面这样（用下border &amp;&amp; box-shadow就可以了）<br><img src="/images/dz7.png" style="width:600px"></p>
-<p>但钉子这么巨大的光盘一样的东东是怎么做到的呢？</p>
-<p>其实就像玩<strong>乐高玩具</strong>一样，由以下几个积木拼成的：</p>
-<ul>
-<li><strong>::before &amp;&amp; ::after</strong></li>
-<li><strong>border-image</strong></li>
-<li><strong>border</strong></li>
-<li><strong>box-shadow</strong></li>
-</ul>
-<p>在说积木之前先提两个下几个自己不怎么常用但钉子例子里用到的css属性：</p>
-<ol>
-<li><strong>white-space</strong> （设置如何处理元素内的空白）</li>
-<li><strong>word-wrap</strong>  （是否允许长单词或 URL 地址换行到下一行）</li>
-</ol>
-<p>钉子的具体使用如下图：</p>
-<p><img src="/images/dz2.png" style="width:600px"></p>
-<p>###科普结束，同时，如上图所示用到了伪元素::before和::after,其中::before代码如下。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span><span class="pseudo">::before</span> <span class="rules">&#123;</span><br><span class="line"><span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">"Bakemonogatari"</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">500px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">top</span>:<span class="value"> -<span class="number">110px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">margin-left</span>:<span class="value"> -<span class="number">250px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">color</span>:<span class="value"> <span class="hexcolor">#FFF</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">font-size</span>:<span class="value"> <span class="number">50px</span></span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">font-weight</span>:<span class="value"> bold</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">font-family</span>:<span class="value"> <span class="string">"Times New Roman"</span>, serif</span></span>;</span><br><span class="line"><span class="rule"><span class="attribute">text-shadow</span>:<span class="value"> <span class="number">0</span> <span class="number">0</span> <span class="number">40px</span> <span class="hexcolor">#000</span>, <span class="number">0</span> -<span class="number">1px</span> <span class="number">0</span> <span class="hexcolor">#F3F3F3</span>, <span class="number">0</span> -<span class="number">2px</span> <span class="number">0</span> <span class="hexcolor">#F3F3F3</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<p>同理，那段文字”DimWorks CopyRight © TwentyThirteen\AOriginal Sound Track\AProundly Based on Html5 &amp; Css 3”是通过伪元素::after实现的。</p>
-<p>###光盘的四个小正方形钉子是用border-image实现的, linear-gradient描绘border背景。钉子说“四个小点是利用了 border-image 在 Webkit 下诡异的默认渲染和 linear-gradient 的错误打开方式模拟，在别的内核下貌似没有效果。“</p>
-<p>效果和代码请见下文</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">border-image: -webkit-linear-gradient( rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.3</span>) , rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.3</span>) );</span><br><span class="line"><span class="comment">//表示四个角每个角的颜色从上至下颜色由rgba(255, 255, 255, 0.3) 像rgba(255, 255, 255, 0.3)渐变。</span></span><br></pre></td></tr></table></figure>
-<p><img src="/images/dz3.png" style="width:600px"></p>
-<p>再举个border-image栗子<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.a</span>｛</span><br><span class="line"><span class="attribute">width</span><span class="value">: <span class="number">200px</span>;</span></span><br><span class="line"><span class="attribute">margin</span><span class="value">: <span class="number">0</span> auto;</span></span><br><span class="line"><span class="attribute">height</span><span class="value">: <span class="number">200px</span>;</span></span><br><span class="line"><span class="attribute">border-width</span><span class="value">: <span class="number">3px</span>;</span></span><br><span class="line"><span class="attribute">border-style</span><span class="value">: solid;</span></span><br><span class="line">-webkit-<span class="attribute">border-image</span><span class="value">: <span class="function">-webkit-gradient</span>(linear, <span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">100%</span>, <span class="function">from</span>(<span class="hexcolor">#000</span>), <span class="function">to</span>(<span class="hexcolor">#fff</span>)) <span class="number">1</span> <span class="number">100%</span>;</span></span><br><span class="line">-webkit-<span class="attribute">border-image</span><span class="value">: <span class="function">-webkit-linear-gradient</span>(<span class="hexcolor">#000</span>, <span class="hexcolor">#fff</span>) <span class="number">1</span> <span class="number">100%</span>;</span></span><br><span class="line">-moz-<span class="attribute">border-image</span><span class="value">:<span class="function">-moz-linear-gradient</span>(<span class="hexcolor">#000</span>, <span class="hexcolor">#fff</span>) <span class="number">1</span> <span class="number">100%</span>;</span>    </span><br><span class="line">-o-<span class="attribute">border-image</span><span class="value">:<span class="function">-o-linear-gradient</span>(<span class="hexcolor">#000</span>, <span class="hexcolor">#fff</span>) <span class="number">1</span> <span class="number">100%</span>;</span></span><br><span class="line"><span class="attribute">border-image</span><span class="value">:<span class="function">linear-gradient</span>(to bottom, <span class="hexcolor">#000</span>, <span class="hexcolor">#fff</span>) <span class="number">1</span> <span class="number">100%</span>;</span></span><br><span class="line">｝</span><br></pre></td></tr></table></figure></p>
-<p>表示透明度由上向下从黑色到呈线性变化 </p>
-<p><img src="/images/dz11.png" style="width:600px"></p>
-<p>其实border-image和background-image渐变相似：background-image:-webkit-gradient(type, x1 y1, x2 y2, from(开始颜色值), to(结束颜色值), [color-stop(偏移量小数, 停靠颜色值), …] );</p>
-<p>###计算时border包含在宽度里哦<br><img src="/images/dz4.png" style="width:600px"></p>
-<p>###box-shadow<br>p.s. 计算时不包含在宽度里哦<br>参数有水平位移 竖直位移 模糊 扩散 颜色 内外嵌（外为默认）<br>钉子水平无位移 有4个外嵌 2个内嵌。<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-shadow</span><span class="value">: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">4px</span> <span class="function">rgba</span>(<span class="number">247</span>, <span class="number">247</span>, <span class="number">247</span>, <span class="number">0.53</span>) , <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">200px</span><span class="function">rgba</span>(<span class="number">177</span>, <span class="number">30</span>, <span class="number">30</span>, <span class="number">0.81</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">204px</span> <span class="function">rgba</span>(<span class="number">247</span>, <span class="number">247</span>, <span class="number">247</span>, <span class="number">0.67</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">204px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.64</span>), <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">60px</span> <span class="function">rgba</span>(<span class="number">27</span>, <span class="number">27</span>, <span class="number">27</span>, <span class="number">0.79</span>)inset, <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">60px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.73</span>) inset;</span></span><br></pre></td></tr></table></figure></p>
-<p>下图中数字表示第几个box-shadow</p>
-<p><img src="/images/dz5.png" style="width:600px"><br>搬运工完工领盒饭去啦，有问题可以指出，333333q~~</p>
-
-          
+          <p>啦啦啦 psychola搬运工来啦，<strong>大家相信下图中大圆圆只用一个div就可以做到吗</strong>？</p>
+<p><strong>钉子 [“原文例子地址”](<a href="http://blog.dimpurr.com/one-div-css3-cd/）">http://blog.dimpurr.com/one-div-css3-cd/）</a> </strong><br><img src="/images/dz1.png" style="width:600px"/></p>
+<p>答案肯定如你们所料是：可以的。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/28/dimpurr-exam/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
