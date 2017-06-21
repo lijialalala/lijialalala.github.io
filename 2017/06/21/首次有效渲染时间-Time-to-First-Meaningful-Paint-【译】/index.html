@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="前端优化,首屏有效时间," />
 
 
 
@@ -59,15 +59,28 @@
 
 
 
-<meta name="description" content="初心恒在，依旧素朴谦卑。可爱の佳佳">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Psychola">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
+<meta property="og:url" content="http://yoursite.com/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/index.html">
 <meta property="og:site_name" content="Psychola">
-<meta property="og:description" content="初心恒在，依旧素朴谦卑。可爱の佳佳">
+<meta property="og:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
+<meta property="og:image" content="http://i.imgur.com/wJQsyAC.png">
+<meta property="og:image" content="http://i.imgur.com/ri2WCGF.jpg">
+<meta property="og:image" content="http://i.imgur.com/RxrVbdv.jpg">
+<meta property="og:image" content="http://i.imgur.com/G7cFu5q.jpg">
+<meta property="og:image" content="http://i.imgur.com/LDEIBbH.png">
+<meta property="og:image" content="http://i.imgur.com/FYhQGZe.png">
+<meta property="og:image" content="http://i.imgur.com/jUBa0EU.jpg">
+<meta property="og:image" content="http://i.imgur.com/9xURbmR.png">
+<meta property="og:image" content="http://i.imgur.com/XwtCgPo.png">
+<meta property="og:updated_time" content="2017-06-21T06:34:20.877Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Psychola">
-<meta name="twitter:description" content="初心恒在，依旧素朴谦卑。可爱の佳佳">
+<meta name="twitter:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
+<meta name="twitter:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
 
 
 
@@ -85,7 +98,7 @@
   };
 </script>
 
-  <title> Hexo, NexT - Psychola - 初心恒在，依旧素朴谦卑。可爱の佳佳 </title>
+  <title> 首次有效渲染时间(Time to First Meaningful Paint)【译】 | Psychola </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,9 +117,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,24 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -263,10 +259,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/" itemprop="url">
-                  首次有效渲染时间(Time to First Meaningful Paint)【译】
-                </a>
+                首次有效渲染时间(Time to First Meaningful Paint)【译】
               
             
           </h1>
@@ -311,9 +304,7 @@
       
 
       
-        
-          
-            <p>#首次有效渲染时间(Time to First Meaningful Paint)<br><em>一个基于布局的近似方法(A layout-based approach)</em></p>
+        <p>#首次有效渲染时间(Time to First Meaningful Paint)<br><em>一个基于布局的近似方法(A layout-based approach)</em></p>
 <p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;">&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
 <p>##背景<br><strong>“首次有效渲染”<em>(First Meaningful Paint)</em></strong>是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准<em>(Metric)</em>。</p>
 <p>“主要内容”<em>(primary content)</em>的定义根据不同页面而有所不同。对于博客里的文章,它是上面的标题+¬-折叠文本(above-the-fold text),并且文本必须是可见的，¬而¬不是在等待字体加载。对于搜索引擎,它是搜索结果。如果一个图片对于页面来说很重要(例如e-commerce产品页),则 “首次有效渲染”需要这个图片是可见的状态。所以，一个渲染如果只有页面头部、导航栏,或加载提示标（如旋转的图标）就不是合格的“主要内容”。</p>
@@ -372,36 +363,84 @@
 <p>第二步  (UMA): 第一个版本的UMA来了。目前, 直方图是作为实验的标记内容，在促进他们的实验之前,我们想做一些改进。(跟踪在<a href="https://crbug.com/632081" target="_blank" rel="external">https://crbug.com/632081</a>).</p>
 <p>引用<br><a href="https://groups.google.com/a/chromium.org/forum/#!msg/loading-dev/GZyyd9IRqCU/ny_Tth9OBwAJ" target="_blank" rel="external">“Is it useful?” metric (aka. First meaningful paint): layout­based approach</a> loading­dev thread <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=507790" target="_blank" rel="external">implementation tracking bug</a></p>
 
-          
-        
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/前端优化/" rel="tag">#前端优化</a>
+          
+            <a href="/tags/首屏有效时间/" rel="tag">#首屏有效时间</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/28/dimpurr-exam/" rel="next" title="解读钉子的“一个 Div 可以做到的 …”">
+                <i class="fa fa-chevron-left"></i> 解读钉子的“一个 Div 可以做到的 …”
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
 
-  </section>
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/"
+     data-title="首次有效渲染时间(Time to First Meaningful Paint)【译】"
+     data-content=""
+     data-url="http://yoursite.com/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/"
+           data-title="首次有效渲染时间(Time to First Meaningful Paint)【译】" data-url="http://yoursite.com/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/">
+      </div>
+    
+  </div>
+
 
 
 </script>
@@ -451,8 +490,17 @@ var duoshuoQuery = {short_name:"psychola"};
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/index.jpg"
@@ -533,6 +581,23 @@ var duoshuoQuery = {short_name:"psychola"};
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -606,6 +671,167 @@ var duoshuoQuery = {short_name:"psychola"};
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
