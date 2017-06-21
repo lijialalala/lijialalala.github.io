@@ -314,7 +314,7 @@
         
           
             <p>#首次有效渲染时间(Time to First Meaningful Paint)<br><em>一个基于布局的近似方法(A layout-based approach)</em></p>
-<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;">&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
+<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#91;&#x6b;&#x73;&#97;&#107;&#97;&#x6d;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#114;&#111;&#109;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#x5d;&#91;&#x31;&#x5d;">&#91;&#x6b;&#x73;&#97;&#107;&#97;&#x6d;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#114;&#111;&#109;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#x5d;&#91;&#x31;&#x5d;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
 <p>##背景<br><strong>“首次有效渲染”<em>(First Meaningful Paint)</em></strong>是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准<em>(Metric)</em>。</p>
 <p>“主要内容”<em>(primary content)</em>的定义根据不同页面而有所不同。对于博客里的文章,它是上面的标题+¬-折叠文本(above-the-fold text),并且文本必须是可见的，¬而¬不是在等待字体加载。对于搜索引擎,它是搜索结果。如果一个图片对于页面来说很重要(例如e-commerce产品页),则 “首次有效渲染”需要这个图片是可见的状态。所以，一个渲染如果只有页面头部、导航栏,或加载提示标（如旋转的图标）就不是合格的“主要内容”。</p>
 <p>“首次有内容的渲染”<em>(First Contentful Paint)</em>是当一些有内容的东西(如文字、图像、canvas画布或SVG)第一次被渲染花的时间。它在UMA和追踪事件(trace event)中需要用到，并且它可以作为“首次有效渲染”时间的近似值,但它经常捕获没有意义的渲染，如头部和导航栏。</p>
@@ -373,6 +373,348 @@
 <p>引用<br><a href="https://groups.google.com/a/chromium.org/forum/#!msg/loading-dev/GZyyd9IRqCU/ny_Tth9OBwAJ" target="_blank" rel="external">“Is it useful?” metric (aka. First meaningful paint): layout­based approach</a> loading­dev thread <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=507790" target="_blank" rel="external">implementation tracking bug</a></p>
 
           
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/28/dimpurr-exam/" itemprop="url">
+                  解读钉子的“一个 Div 可以做到的 …”
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-28T00:01:54+08:00" content="2016-04-28">
+              2016-04-28
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/28/dimpurr-exam/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/28/dimpurr-exam/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>啦啦啦 psychola搬运工来啦，<strong>大家相信下图中大圆圆只用一个div就可以做到吗</strong>？</p>
+<p><strong>钉子 [“原文例子地址”](<a href="http://blog.dimpurr.com/one-div-css3-cd/）">http://blog.dimpurr.com/one-div-css3-cd/）</a> </strong><br><img src="/images/dz1.png" style="width:600px"/></p>
+<p>答案肯定如你们所料是：可以的。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/28/dimpurr-exam/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/04/05/hexoxo-usage/" itemprop="url">
+                  个人搭建hexo并部署到github期间遇到的问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-05T21:20:16+08:00" content="2016-04-05">
+              2016-04-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/搭建环境/" itemprop="url" rel="index">
+                    <span itemprop="name">搭建环境</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/05/hexoxo-usage/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/05/hexoxo-usage/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><img src="/images/hexo2.png"><br>第一次搭建hexo并部署到github，参考了文章<strong><a href="http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html%5D%28http://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html">“史上最详细“截图”搭建Hexo博客并部署到Github”</a></strong>这上面步骤很全</p>
+<p><strong>但是，还是出现了一些问题，只靠这个没法解决：</strong><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/04/05/hexoxo-usage/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/18/bootstrap-1/" itemprop="url">
+                  bootstrap总结(一)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-18T15:11:24+08:00" content="2016-03-18">
+              2016-03-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/框架/" itemprop="url" rel="index">
+                    <span itemprop="name">框架</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/18/bootstrap-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/18/bootstrap-1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="1）开始使用时注意">1）开始使用时注意</h1><p><img src="/images/b1.png"><br>视口宽度为物理设备上真实分辨率，初始缩放为1</p>
+<p><img src="/images/b2.png"><br>因为3是不支持ie7 所以 这些是针对ie8的引入一些js文件<br>第一行使ie8支持html5<br>第二行是支持媒体查询@media</p>
+<pre><code>p.s.记得BS是在jquery条件下使用的！记得引入文件
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/18/bootstrap-1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>

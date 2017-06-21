@@ -60,13 +60,13 @@
 
 
 <meta name="description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#x73;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
 <meta property="og:url" content="http://yoursite.com/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/index.html">
 <meta property="og:site_name" content="Psychola">
 <meta property="og:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#x73;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
 <meta property="og:image" content="http://i.imgur.com/wJQsyAC.png">
 <meta property="og:image" content="http://i.imgur.com/ri2WCGF.jpg">
 <meta property="og:image" content="http://i.imgur.com/RxrVbdv.jpg">
@@ -80,7 +80,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
 <meta name="twitter:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#115;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#x6b;&amp;#x73;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d">
 
 
 
@@ -305,7 +305,7 @@
 
       
         <p>#首次有效渲染时间(Time to First Meaningful Paint)<br><em>一个基于布局的近似方法(A layout-based approach)</em></p>
-<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;">&#91;&#x6b;&#115;&#97;&#107;&#97;&#x6d;&#111;&#116;&#x6f;&#64;&#x63;&#x68;&#114;&#x6f;&#109;&#x69;&#117;&#109;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#49;&#93;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
+<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#x3a;&#91;&#x6b;&#x73;&#97;&#107;&#97;&#x6d;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#114;&#111;&#109;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#x5d;&#91;&#x31;&#x5d;">&#91;&#x6b;&#x73;&#97;&#107;&#97;&#x6d;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#114;&#111;&#109;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#x5d;&#91;&#x31;&#x5d;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
 <p>##背景<br><strong>“首次有效渲染”<em>(First Meaningful Paint)</em></strong>是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准<em>(Metric)</em>。</p>
 <p>“主要内容”<em>(primary content)</em>的定义根据不同页面而有所不同。对于博客里的文章,它是上面的标题+¬-折叠文本(above-the-fold text),并且文本必须是可见的，¬而¬不是在等待字体加载。对于搜索引擎,它是搜索结果。如果一个图片对于页面来说很重要(例如e-commerce产品页),则 “首次有效渲染”需要这个图片是可见的状态。所以，一个渲染如果只有页面头部、导航栏,或加载提示标（如旋转的图标）就不是合格的“主要内容”。</p>
 <p>“首次有内容的渲染”<em>(First Contentful Paint)</em>是当一些有内容的东西(如文字、图像、canvas画布或SVG)第一次被渲染花的时间。它在UMA和追踪事件(trace event)中需要用到，并且它可以作为“首次有效渲染”时间的近似值,但它经常捕获没有意义的渲染，如头部和导航栏。</p>
