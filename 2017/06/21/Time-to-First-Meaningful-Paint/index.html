@@ -59,14 +59,14 @@
 
 
 
-<meta name="description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#">
+<meta name="description" content="首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#107;&amp;#x73;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#10">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
 <meta property="og:url" content="http://yoursite.com/2017/06/21/Time-to-First-Meaningful-Paint/index.html">
 <meta property="og:site_name" content="Psychola">
-<meta property="og:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#">
+<meta property="og:description" content="首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#107;&amp;#x73;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#10">
 <meta property="og:image" content="http://i.imgur.com/wJQsyAC.png">
 <meta property="og:image" content="http://i.imgur.com/ri2WCGF.jpg">
 <meta property="og:image" content="http://i.imgur.com/RxrVbdv.jpg">
@@ -76,11 +76,11 @@
 <meta property="og:image" content="http://i.imgur.com/jUBa0EU.jpg">
 <meta property="og:image" content="http://i.imgur.com/9xURbmR.png">
 <meta property="og:image" content="http://i.imgur.com/XwtCgPo.png">
-<meta property="og:updated_time" content="2017-06-21T07:06:03.407Z">
+<meta property="og:updated_time" content="2017-06-21T07:09:28.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="首次有效渲染时间(Time to First Meaningful Paint)【译】">
-<meta name="twitter:description" content="#首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
-[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#">
+<meta name="twitter:description" content="首次有效渲染时间(Time to First Meaningful Paint)一个基于布局的近似方法(A layout-based approach)
+[Public] Created: April 12, 2016Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &amp;#91;&amp;#107;&amp;#x73;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#10">
 
 
 
@@ -304,16 +304,14 @@
       
 
       
-        <p>#首次有效渲染时间(Time to First Meaningful Paint)<br><em>一个基于布局的近似方法(A layout-based approach)</em></p>
-<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x5b;&#x6b;&#115;&#x61;&#x6b;&#x61;&#109;&#x6f;&#116;&#x6f;&#64;&#99;&#x68;&#114;&#111;&#x6d;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#x31;&#x5d;">&#x5b;&#x6b;&#115;&#x61;&#x6b;&#x61;&#109;&#x6f;&#116;&#x6f;&#64;&#99;&#x68;&#114;&#111;&#x6d;&#x69;&#x75;&#x6d;&#x2e;&#111;&#114;&#x67;&#93;&#x5b;&#x31;&#x5d;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
-<p>##背景<br><strong>“首次有效渲染”<em>(First Meaningful Paint)</em></strong>是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准<em>(Metric)</em>。</p>
+        <h1 id="首次有效渲染时间(Time_to_First_Meaningful_Paint)">首次有效渲染时间(Time to First Meaningful Paint)</h1><p><em>一个基于布局的近似方法(A layout-based approach)</em></p>
+<p>[Public] Created: April 12, 2016<br>Last updated: June 6, 2016 Owner: Kunihiko Sakamoto <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#91;&#107;&#x73;&#x61;&#x6b;&#x61;&#109;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#x72;&#111;&#109;&#x69;&#117;&#x6d;&#46;&#x6f;&#114;&#x67;&#93;&#91;&#49;&#93;">&#91;&#107;&#x73;&#x61;&#x6b;&#x61;&#109;&#111;&#x74;&#111;&#x40;&#99;&#x68;&#x72;&#111;&#109;&#x69;&#117;&#x6d;&#46;&#x6f;&#114;&#x67;&#93;&#91;&#49;&#93;</a><br>Status: draft Tracking bug<br>原文地址：<a href="https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq" target="_blank" rel="external">https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq</a><br>翻译：李佳</p>
+<h2 id="背景">背景</h2><p><strong>“首次有效渲染”<em>(First Meaningful Paint)</em></strong>是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准<em>(Metric)</em>。</p>
 <a id="more"></a>
 <p>“主要内容”<em>(primary content)</em>的定义根据不同页面而有所不同。对于博客里的文章,它是上面的标题+¬-折叠文本(above-the-fold text),并且文本必须是可见的，¬而¬不是在等待字体加载。对于搜索引擎,它是搜索结果。如果一个图片对于页面来说很重要(例如e-commerce产品页),则 “首次有效渲染”需要这个图片是可见的状态。所以，一个渲染如果只有页面头部、导航栏,或加载提示标（如旋转的图标）就不是合格的“主要内容”。</p>
 <p>“首次有内容的渲染”<em>(First Contentful Paint)</em>是当一些有内容的东西(如文字、图像、canvas画布或SVG)第一次被渲染花的时间。它在UMA和追踪事件(trace event)中需要用到，并且它可以作为“首次有效渲染”时间的近似值,但它经常捕获没有意义的渲染，如头部和导航栏。</p>
 <p>在本文中,我们提出一个基于布局¬的方法去近似求“首次有效渲染时间”,它匹配了77%的页面（总共198个页面中），关于用户¬感知到的“首次有效渲染”。</p>
-<p>##设计</p>
-<p>###基本方法：计算布局对象<em>(layout objects)</em>个数</p>
-<p>随着页面加载, 布局对象逐步被加到布局树<em>(layout tree)</em>中。<br>图1显示了当加载谷歌搜索结果页面时，被逐步加载到布局树中的布局对象的数量。图2是那个页面加载的视觉进展过程，从WebPageTest结果中可以看到。 (<a href="http://www.webpagetest.org/result/160308_P4_B51/" target="_blank" rel="external">完整的WPT网页测试结果</a>)。</p>
+<h2 id="设计">设计</h2><h3 id="基本方法：计算布局对象(layout_objects)个数">基本方法：计算布局对象<em>(layout objects)</em>个数</h3><p>随着页面加载, 布局对象逐步被加到布局树<em>(layout tree)</em>中。<br>图1显示了当加载谷歌搜索结果页面时，被逐步加载到布局树中的布局对象的数量。图2是那个页面加载的视觉进展过程，从WebPageTest结果中可以看到。 (<a href="http://www.webpagetest.org/result/160308_P4_B51/" target="_blank" rel="external">完整的WPT网页测试结果</a>)。</p>
 <p>“首次有内容的渲染”(1.577秒时)只有页面头部，并且到那个时候60个“布局对象”被添加到页面。在1.76 s时，顶部广告已渲染了一部分,并且“布局对象”总数是103个。 在大约1.86 s时, 搜索结果出现了, 并且261个“布局对象”被添加到“布局树”中。接下来的渲染(1.907秒时)是“首次有效渲染”。在那之后,剩下的搜索结果和页脚都出现在了下面那些不可见的区域中。视觉上，页面的渲染在2.425秒时完成。</p>
 <p><img src="http://i.imgur.com/wJQsyAC.png" alt=""></p>
 <p><strong>图1：当加载谷歌搜索结果页面时，被逐步加载到布局树中的布局对象的数量。</strong></p>
@@ -325,9 +323,9 @@
 <p><strong>“首次有效渲染时间 ”= 紧跟着“最大布局变化”之后的渲染时间点</strong></p>
 <p>“最大布局变化”<em>(Biggest   layout   change)</em>就是 有着大量 “没有布局的布局对象” 的布局。<br>在图1中, “最大布局变化”是在1.86秒时, 所以下一个渲染时间点(1.907秒)就是“首次有效渲染时间”。</p>
 <p>为什么用“布局对象”的总数来定义“首次有效渲染时间”呢?例如,我们能不能定义“首次有效渲染时间”为 百分之多少的布局已经完成呢？问题是我们不能可靠地区分这些东西，当页面完成时。我们不希望 根据我们判断一个页面是否加载完成的不同， 使得计算的“首次有效渲染时间”也大幅度的不同。</p>
-<p>###算法<br>这一基本方法比“首次有内容的渲染”得到更好的结果 (见后文中的“评估单元”),但在许多情况下它仍然不能检测到真正有意义的渲染。</p>
+<h3 id="算法">算法</h3><p>这一基本方法比“首次有内容的渲染”得到更好的结果 (见后文中的“评估单元”),但在许多情况下它仍然不能检测到真正有意义的渲染。</p>
 <p>现在，存在一些这个基本方法不起作用的典型原因,  所以我们要通过添加一些算法 能使我们即时在这些<br>情况下也能显著地提高精确度。</p>
-<p>####1．缓解长页面<br>图3是<a href="http://us.weibo.com/gb页面在视觉上的加载过程([完整的WebPageTest结果][6])。" target="_blank" rel="external">http://us.weibo.com/gb页面在视觉上的加载过程([完整的WebPageTest结果][6])。</a><br>图4显示了在页面加载期间被添加的布局对象的数量,。“首次有效渲染时间”是6.047 s（当在一堆文本内容出现时）,但最大的布局变化大约是在23.8 s。接下来的渲染(24.25秒时)在视觉上是没有意义的,因为在23.8 s发生的布局变化时添加的对象在页面底部，到了可见区域之外。</p>
+<h4 id="1．缓解长页面">1．缓解长页面</h4><p>图3是<a href="http://us.weibo.com/gb页面在视觉上的加载过程([完整的WebPageTest结果][6])。" target="_blank" rel="external">http://us.weibo.com/gb页面在视觉上的加载过程([完整的WebPageTest结果][6])。</a><br>图4显示了在页面加载期间被添加的布局对象的数量,。“首次有效渲染时间”是6.047 s（当在一堆文本内容出现时）,但最大的布局变化大约是在23.8 s。接下来的渲染(24.25秒时)在视觉上是没有意义的,因为在23.8 s发生的布局变化时添加的对象在页面底部，到了可见区域之外。</p>
 <p><img src="http://i.imgur.com/RxrVbdv.jpg" alt=""></p>
 <p><img src="http://i.imgur.com/G7cFu5q.jpg" alt=""></p>
 <p><strong>图3: 网站<a href="http://us.weibo.com/gb的视觉上的加载过程" target="_blank" rel="external">http://us.weibo.com/gb的视觉上的加载过程</a></strong> </p>
@@ -338,26 +336,25 @@
 <p>例如,在图4中最大的布局变化发生的时候(23.8秒)，页面高度是屏幕高度的4.25倍, 所以这个“布局意义”是布局对象的数量 除以4.25。图5显示的布局过程与图4类似,但图5使用了上面定义的“布局意义”。现在，最重要的布局变化是在5.89秒, 就在“首次有效渲染”(6.047秒)之前。</p>
 <p><img src="http://i.imgur.com/FYhQGZe.png" alt=""> </p>
 <p><strong>图 5: 布局意义(布局对象数量由页面高度确定权重)</strong></p>
-<p>####2.网页字体<br>图6是<a href="http://www.msn.com/页面视觉的加载过程([完整的WebPageTest结果][11])。最大的布局变化是在2.51秒,但下面的截图没有文本内容,这是因为网络字体仍然加载。" target="_blank" rel="external">http://www.msn.com/页面视觉的加载过程([完整的WebPageTest结果][11])。最大的布局变化是在2.51秒,但下面的截图没有文本内容,这是因为网络字体仍然加载。</a></p>
+<h4 id="2-网页字体">2.网页字体</h4><p>图6是<a href="http://www.msn.com/页面视觉的加载过程([完整的WebPageTest结果][11])。最大的布局变化是在2.51秒,但下面的截图没有文本内容,这是因为网络字体仍然加载。" target="_blank" rel="external">http://www.msn.com/页面视觉的加载过程([完整的WebPageTest结果][11])。最大的布局变化是在2.51秒,但下面的截图没有文本内容,这是因为网络字体仍然加载。</a></p>
 <p><img src="http://i.imgur.com/jUBa0EU.jpg" alt=""></p>
 <p><strong>图6: <a href="http://www.msn.com/页面的视觉加载过程" target="_blank" rel="external">http://www.msn.com/页面的视觉加载过程</a></strong></p>
 <p>当一个网页字体在加载时,文本已经布局了(通过使用后备字体的字体度量<em>(metric)</em>)，但文本并没有在<a href="https://tabatkins.github.io/specs/css-font-display/#font-block-period" target="_blank" rel="external">字体阻塞期间</a>渲染(默认情况下, 字体阻塞期间是从加载开始的3秒)。一眨眼般快速的<em>(Blink)</em>布局层并不关心文本是不是可见的, 但由于文本对于用户感受到的加载体验是很重要的，所以我们的“首次有效渲染”度量标准应把页面字体的可见性考虑进去。</p>
 <p>所以我们引入算法：如果当布局发生时还存在加载中的字体,布局的变化统计将会被推迟，直到该字体显示出来。(如果三秒内加载了就用该字体，否则超时了就用备用字体显示)。</p>
 <p>但是，把这条规则应用到所有网站字体显得太勉强了——较小的字体,如图标字体并不会阻塞“首次有效渲染时间”。在我实验的实现中, 超过200个字节的网页字体才会阻塞“首次有效渲染时间”。</p>
-<p>###附加说明<br>●    这个测量只是基于新的布局对象,不考虑已布局的布局对象的大小或位置的改变。所以这并不适合“稳定的布局”(layout stabilized)的度量标准。<br>●    对于一些页面, “首次有效渲染”的关键因素是图片。对于等待中的图片，我们可能需要一些算法, 就像等待加载的字体用的算法一样。<br>●    由于这个指标是基于布局对象的,所以这是不受“未连接到布局树的DOM元素”的影响 (例如display:none的元素)。然而,一些页面渲染内容在覆盖物之下, (例如,<a href="www.flipkart.com">www.flipkart.com</a>的启动页面)，或在一个透明层之上(例如<a href="www.adobe.com">www.adobe.com</a>)去实现一个fadein的加载效果。在这些情况下,我们的方法发现布局变化对用户来说是看不见的, 而且计时是毫无意义的。<br>●    页面高度算法使这个度量标准依赖于屏幕的大小。这是很正常的，因为我们的兴趣在是折叠渲染区域之上的部分, 但推导这个度量标准可能有点复杂。</p>
-<p>##评估<br>为了评估这个方法, 我使用修补版的ChromeAPK，已经在200个热门网站(基于alexa¬-top,包括子页面)上跑了WPT测试。然后我下载WPT 的trace.json文件，并且通过运行跟踪事件来计算上文中提到的基于布局的“首次有效渲染时间”。WPT还生成截图幻灯片,所以我们可以比较计算的“首次有效渲染时间”和人为选择的“用户感受到的首次有效渲染时间”的区别。</p>
+<h3 id="附加说明">附加说明</h3><p>●    这个测量只是基于新的布局对象,不考虑已布局的布局对象的大小或位置的改变。所以这并不适合“稳定的布局”(layout stabilized)的度量标准。<br>●    对于一些页面, “首次有效渲染”的关键因素是图片。对于等待中的图片，我们可能需要一些算法, 就像等待加载的字体用的算法一样。<br>●    由于这个指标是基于布局对象的,所以这是不受“未连接到布局树的DOM元素”的影响 (例如display:none的元素)。然而,一些页面渲染内容在覆盖物之下, (例如,<a href="www.flipkart.com">www.flipkart.com</a>的启动页面)，或在一个透明层之上(例如<a href="www.adobe.com">www.adobe.com</a>)去实现一个fadein的加载效果。在这些情况下,我们的方法发现布局变化对用户来说是看不见的, 而且计时是毫无意义的。<br>●    页面高度算法使这个度量标准依赖于屏幕的大小。这是很正常的，因为我们的兴趣在是折叠渲染区域之上的部分, 但推导这个度量标准可能有点复杂。</p>
+<h2 id="评估">评估</h2><p>为了评估这个方法, 我使用修补版的ChromeAPK，已经在200个热门网站(基于alexa¬-top,包括子页面)上跑了WPT测试。然后我下载WPT 的trace.json文件，并且通过运行跟踪事件来计算上文中提到的基于布局的“首次有效渲染时间”。WPT还生成截图幻灯片,所以我们可以比较计算的“首次有效渲染时间”和人为选择的“用户感受到的首次有效渲染时间”的区别。</p>
 <p>结果: <a href="https://docs.google.com/spreadsheets/d/1FEcDwXfgMf5rw1lNn07Cm04A­r7AdPzmt0aAufMsnnk/" target="_blank" rel="external">https://docs.google.com/spreadsheets/d/1FEcDwXfgMf5rw1lNn07Cm04A­r7AdPzmt0aAufMsnnk/</a> edit?usp=sharing<br>截屏 (橙色高亮的是检测到的“首次有效渲染时间”): <a href="https://goo.gl/wOHl2s" target="_blank" rel="external">https://goo.gl/wOHl2s</a></p>
 <p>表1总结了结果。“首次有内容的渲染”是我们目前有的最好的近似值,而且在52.5%的例子(标注1)中，它匹配了“用户¬感知的首次有效渲染时间”。不包括“页面高度算法”或“字体算法”的基本的布局对象的计数略优于“首次有内容的渲染” (57.1%)。混合“页面高度”和“网页字体”这两个算法的计算使“首次有效渲染时间”已经达到了77.3%的准确率。</p>
 <p>(标注1)在以前的评估中，我们使用了宽松定义的“首次有效渲染”(在屏幕上的可读部分)。现在我们使用更严格的定义¬——¬页面的主要内容必须是易读的。</p>
 <p><img src="http://i.imgur.com/9xURbmR.png" alt=""></p>
 <p><strong>表1:评估结果的总结</strong></p>
-<p>##实现方案</p>
-<p>###第 1步: 基于跟踪的实现<br>实验的实现包括了：（1）一个“瞬间的改变”<em>(a Blink side change)</em>，这个改变 增强了布局分析者<em>(LayoutAnalyzer)</em>对页面高度和网页字体可见性信息的跟踪事件；（2）一个脚本 ,该脚本处理跟踪事件去计算最大的布局变化。这个实现可以很容易去把这个变成一个TBMv2度量标准<em>(metrics)</em>，而这个标准可用于像Page Cycler V2一样的基准。</p>
-<p>###第2步: UMA<br>[过时了，请看 UMA design doc（UMA设计文档）]<br>我们希望去收集“首次有效渲染时间”作为一个UMA度量标准。Finch和heartbeat依赖于UMA, UMA是唯一我们有的能理解真实用户体验的系统。</p>
+<h2 id="实现方案">实现方案</h2><h3 id="第_1步:_基于跟踪的实现">第 1步: 基于跟踪的实现</h3><p>实验的实现包括了：（1）一个“瞬间的改变”<em>(a Blink side change)</em>，这个改变 增强了布局分析者<em>(LayoutAnalyzer)</em>对页面高度和网页字体可见性信息的跟踪事件；（2）一个脚本 ,该脚本处理跟踪事件去计算最大的布局变化。这个实现可以很容易去把这个变成一个TBMv2度量标准<em>(metrics)</em>，而这个标准可用于像Page Cycler V2一样的基准。</p>
+<h3 id="第2步:_UMA">第2步: UMA</h3><p>[过时了，请看 UMA design doc（UMA设计文档）]<br>我们希望去收集“首次有效渲染时间”作为一个UMA度量标准。Finch和heartbeat依赖于UMA, UMA是唯一我们有的能理解真实用户体验的系统。</p>
 <p>LayoutAnalyzer默认情况下是禁用的,因为它有一些计算开销。我们不需要所有的LayoutAnalyzer计数器来计算“首次有效渲染时间”,  只需要被添加到布局树的布局对象的数量，这个数量可以以不同的方式收集。</p>
 <p>实现计划:PaintTiming持有一个渲染的时间戳，这个时间戳目前在最大的布局变化之后。当有更重要的布局变化时，时间戳会更新。这个时间戳会被发送到浏览器进程的PageLoadMetrics中，并且当用户从页面导航出去时它会作为UMA直方图。</p>
 <p>注意, “首次有效渲染时间”的时间戳可以在页面加载期间更改几次。如果页面加载在完成之前失败, “页面加载度量标准”将报告暂时的时间，这个时间可能不是很有意义,例如导航栏或旋转图标。页面加载度量标准” 在单独的直方图里记录“失败的导航栏”的时间 (“页面加载失败时间” *)。对于失败的页面加载，我们需要非常小心地解读它的“首次有效渲染时间”度量标准。</p>
-<p>####Implementation  status<br>第一步 (基于跟踪¬的实现) 来了, 并且它和一个<a href="https://github.com/catapult-project/catapult/blob/master/tracing/tracing/metrics/system_health/loading_metric.html" target="_blank" rel="external">TBMv2 metric</a><em>(TBMv2标准)</em>一样，是可获得的.。现在，你可以从跟踪观察器来看“首次有效渲染时间”。</p>
+<h4 id="Implementation_status">Implementation  status</h4><p>第一步 (基于跟踪¬的实现) 来了, 并且它和一个<a href="https://github.com/catapult-project/catapult/blob/master/tracing/tracing/metrics/system_health/loading_metric.html" target="_blank" rel="external">TBMv2 metric</a><em>(TBMv2标准)</em>一样，是可获得的.。现在，你可以从跟踪观察器来看“首次有效渲染时间”。</p>
 <p>为了使用这个,你可以去chrome://tracing并记录一个激活了以下内容的跟踪:<br>●    blink.user_timing<br>●    loading</p>
 <p>“首次有效渲染时间”的值可以在“度量标准”侧板中看到<br>(见下图)。<br><img src="http://i.imgur.com/XwtCgPo.png" alt=""><br>另外,这些标准可以从一个跟踪文件里计算得到，通过使用<br>这个命令:</p>
 <p>chromium/src$ third_party/catapult/tracing/bin/run_metric trace.json loadingMetric</p>
@@ -591,7 +588,7 @@ var duoshuoQuery = {short_name:"psychola"};
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首次有效渲染时间(Time_to_First_Meaningful_Paint)"><span class="nav-number">1.</span> <span class="nav-text">首次有效渲染时间(Time to First Meaningful Paint)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计"><span class="nav-number">1.2.</span> <span class="nav-text">设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本方法：计算布局对象(layout_objects)个数"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本方法：计算布局对象(layout objects)个数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#算法"><span class="nav-number">1.2.2.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1．缓解长页面"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1．缓解长页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-网页字体"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2.网页字体</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附加说明"><span class="nav-number">1.2.3.</span> <span class="nav-text">附加说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评估"><span class="nav-number">1.3.</span> <span class="nav-text">评估</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现方案"><span class="nav-number">1.4.</span> <span class="nav-text">实现方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第_1步:_基于跟踪的实现"><span class="nav-number">1.4.1.</span> <span class="nav-text">第 1步: 基于跟踪的实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第2步:_UMA"><span class="nav-number">1.4.2.</span> <span class="nav-text">第2步: UMA</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Implementation_status"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">Implementation  status</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
