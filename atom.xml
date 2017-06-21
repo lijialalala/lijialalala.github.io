@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-21T06:34:20.877Z</updated>
+  <updated>2017-06-21T07:06:03.407Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,14 +17,15 @@
   
   <entry>
     <title>首次有效渲染时间(Time to First Meaningful Paint)【译】</title>
-    <link href="http://yoursite.com/2017/06/21/%E9%A6%96%E6%AC%A1%E6%9C%89%E6%95%88%E6%B8%B2%E6%9F%93%E6%97%B6%E9%97%B4-Time-to-First-Meaningful-Paint-%E3%80%90%E8%AF%91%E3%80%91/"/>
-    <id>http://yoursite.com/2017/06/21/首次有效渲染时间-Time-to-First-Meaningful-Paint-【译】/</id>
+    <link href="http://yoursite.com/2017/06/21/Time-to-First-Meaningful-Paint/"/>
+    <id>http://yoursite.com/2017/06/21/Time-to-First-Meaningful-Paint/</id>
     <published>2017-06-21T06:24:03.000Z</published>
-    <updated>2017-06-21T06:34:20.877Z</updated>
+    <updated>2017-06-21T07:06:03.407Z</updated>
     
     <content type="html">&lt;p&gt;#首次有效渲染时间(Time to First Meaningful Paint)&lt;br&gt;&lt;em&gt;一个基于布局的近似方法(A layout-based approach)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;[Public] Created: April 12, 2016&lt;br&gt;Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#91;&amp;#x6b;&amp;#x73;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d;&amp;#111;&amp;#x74;&amp;#111;&amp;#x40;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#109;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#x5d;&amp;#91;&amp;#x31;&amp;#x5d;&quot;&gt;&amp;#91;&amp;#x6b;&amp;#x73;&amp;#97;&amp;#107;&amp;#97;&amp;#x6d;&amp;#111;&amp;#x74;&amp;#111;&amp;#x40;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#109;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#x5d;&amp;#91;&amp;#x31;&amp;#x5d;&lt;/a&gt;&lt;br&gt;Status: draft Tracking bug&lt;br&gt;原文地址：&lt;a href=&quot;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&lt;/a&gt;&lt;br&gt;翻译：李佳&lt;/p&gt;
+&lt;p&gt;[Public] Created: April 12, 2016&lt;br&gt;Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#109;&amp;#x6f;&amp;#116;&amp;#x6f;&amp;#64;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#x6d;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#93;&amp;#x5b;&amp;#x31;&amp;#x5d;&quot;&gt;&amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#109;&amp;#x6f;&amp;#116;&amp;#x6f;&amp;#64;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#x6d;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#93;&amp;#x5b;&amp;#x31;&amp;#x5d;&lt;/a&gt;&lt;br&gt;Status: draft Tracking bug&lt;br&gt;原文地址：&lt;a href=&quot;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&lt;/a&gt;&lt;br&gt;翻译：李佳&lt;/p&gt;
 &lt;p&gt;##背景&lt;br&gt;&lt;strong&gt;“首次有效渲染”&lt;em&gt;(First Meaningful Paint)&lt;/em&gt;&lt;/strong&gt;是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准&lt;em&gt;(Metric)&lt;/em&gt;。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;“主要内容”&lt;em&gt;(primary content)&lt;/em&gt;的定义根据不同页面而有所不同。对于博客里的文章,它是上面的标题+¬-折叠文本(above-the-fold text),并且文本必须是可见的，¬而¬不是在等待字体加载。对于搜索引擎,它是搜索结果。如果一个图片对于页面来说很重要(例如e-commerce产品页),则 “首次有效渲染”需要这个图片是可见的状态。所以，一个渲染如果只有页面头部、导航栏,或加载提示标（如旋转的图标）就不是合格的“主要内容”。&lt;/p&gt;
 &lt;p&gt;“首次有内容的渲染”&lt;em&gt;(First Contentful Paint)&lt;/em&gt;是当一些有内容的东西(如文字、图像、canvas画布或SVG)第一次被渲染花的时间。它在UMA和追踪事件(trace event)中需要用到，并且它可以作为“首次有效渲染”时间的近似值,但它经常捕获没有意义的渲染，如头部和导航栏。&lt;/p&gt;
 &lt;p&gt;在本文中,我们提出一个基于布局¬的方法去近似求“首次有效渲染时间”,它匹配了77%的页面（总共198个页面中），关于用户¬感知到的“首次有效渲染”。&lt;/p&gt;
@@ -85,7 +86,8 @@
     <summary type="html">
     
       &lt;p&gt;#首次有效渲染时间(Time to First Meaningful Paint)&lt;br&gt;&lt;em&gt;一个基于布局的近似方法(A layout-based approach)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;[Public] Created: April 12, 2016&lt;br&gt;Las
+&lt;p&gt;[Public] Created: April 12, 2016&lt;br&gt;Last updated: June 6, 2016 Owner: Kunihiko Sakamoto &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#109;&amp;#x6f;&amp;#116;&amp;#x6f;&amp;#64;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#x6d;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#93;&amp;#x5b;&amp;#x31;&amp;#x5d;&quot;&gt;&amp;#x5b;&amp;#x6b;&amp;#115;&amp;#x61;&amp;#x6b;&amp;#x61;&amp;#109;&amp;#x6f;&amp;#116;&amp;#x6f;&amp;#64;&amp;#99;&amp;#x68;&amp;#114;&amp;#111;&amp;#x6d;&amp;#x69;&amp;#x75;&amp;#x6d;&amp;#x2e;&amp;#111;&amp;#114;&amp;#x67;&amp;#93;&amp;#x5b;&amp;#x31;&amp;#x5d;&lt;/a&gt;&lt;br&gt;Status: draft Tracking bug&lt;br&gt;原文地址：&lt;a href=&quot;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&quot;&gt;https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view#heading=h.p4gz01f31cgq&lt;/a&gt;&lt;br&gt;翻译：李佳&lt;/p&gt;
+&lt;p&gt;##背景&lt;br&gt;&lt;strong&gt;“首次有效渲染”&lt;em&gt;(First Meaningful Paint)&lt;/em&gt;&lt;/strong&gt;是当页面的主要内容出现在屏幕上花的时间。这将是我们对于用户感受到的加载体验的主要度量标准&lt;em&gt;(Metric)&lt;/em&gt;。&lt;/p&gt;
     
     </summary>
     
